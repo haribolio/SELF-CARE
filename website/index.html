@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Marketing Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f0;
+        }
+        header {
+            background-color: #ff66b2;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff99cc;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        .product {
+            border: 1px solid #ffb3d9;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 1rem;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+        }
+        .product img {
+            max-width: 150px;
+            margin-right: 1rem;
+        }
+        .product-info {
+            flex-grow: 1;
+        }
+        .product-info h2 {
+            margin: 0 0 0.5rem;
+            color: #ff66b2;
+        }
+        .product-info p {
+            margin: 0 0 1rem;
+        }
+        .product-info a {
+            color: #ff66b2;
+            text-decoration: none;
+        }
+        .product-info a:hover {
+            text-decoration: underline;
+        }
+        .introduction, .about, .contact {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #ffe6f0;
+            border: 1px solid #ffb3d9;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #ff66b2;
+            color: #fff;
+            margin-top: 2rem;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('main > section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="profile.png" alt="Website Logo" style="max-width: 150px;">
+        <h1>GROW FOR YOURSELF</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+    <main>
+        <section id="home">
+            <div class="introduction">
+                <p> Hey Girlies, I have listed all the products below. Feel free to check it out. Cheers to your self growth journey!</p>
+            </div>
+            <section class="product">
+                <img src="books.png" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>The one thing you must have in your bag</p>
+                    <a href="https://www.affiliate-link.com/product1" target="_blank">Buy Now</a>
+                </div>
+            </section>
+            <section class="product">
+                <img src="skincare.png" alt="Product 2">
+                <div class="product-info">
+                    <h2>Product 2</h2>
+                    <p>The next thing you must have in your bag</p>
+                    <a href="https://www.affiliate-link.com/product2" target="_blank">Buy Now</a>
+                </div>
+            </section>
+            <!-- Add more product sections as needed -->
+        </section>
+
+        <section id="about" class="hidden about">
+            <h2>About Us</h2>
+            <p>Hey Girlies, I am so flattered that you wanted to know more about us. I just wanted you guys to have a place to reach out to for some tips or motivation. I wanted to create a self care and self growth space for all of you guys. I wanted this place to be a site for you to find what you are looking for, a place to inspire you to read books, take care of yourself and many more. I hope I created that for you.</p>
+        </section>
+
+       
+
+        <section id="contact" class="hidden contact">
+            <h2>Contact Us</h2>
+            <p>If you have any queries, you can reach out to me on salvatorevesperia@gmail.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; SELF CARE</p>
+    </footer>
+</body>
+</html>
