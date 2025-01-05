@@ -64,13 +64,8 @@
         .product-info a:hover {
             text-decoration: underline;
         }
-        .introduction, .about, .contact {
-            text-align: center;
-            margin: 2rem 0;
-            padding: 1rem;
-            background-color: #ffe6f0;
-            border: 1px solid #ffb3d9;
-            border-radius: 5px;
+        .hidden {
+            display: none;
         }
         footer {
             text-align: center;
@@ -78,9 +73,6 @@
             background-color: #ff66b2;
             color: #fff;
             margin-top: 2rem;
-        }
-        .hidden {
-            display: none;
         }
     </style>
     <script>
@@ -99,44 +91,77 @@
     </header>
     <nav>
         <a href="#" onclick="showSection('home')">Home</a>
-        <a href="#" onclick="showSection('about')">About</a>
-        
-        <a href="#" onclick="showSection('contact')">Contact</a>
+        <a href="#" onclick="showSection('hygiene')">Hygiene Products</a>
+        <a href="#" onclick="showSection('books')">Motivating Books</a>
+        <a href="#" onclick="showSection('skincare')">Skincare</a>
+        <a href="#" onclick="showSection('makeup')">Makeup</a>
+        <a href="#" onclick="showSection('workout')">Workout Products</a>
     </nav>
     <main>
         <section id="home">
             <div class="introduction">
-                <p> Hey Girlies, I have listed all the products below. Feel free to check it out. Cheers to your self growth journey!</p>
+                <p>Hey Girlies, I have listed all the products below. Feel free to check it out. Cheers to your self growth journey!</p>
             </div>
-            <section class="product">
-                <img src="books.png" alt="Product 1">
-                <div class="product-info">
-                    <h2>Product 1</h2>
-                    <p>The one thing you must have in your bag</p>
-                    <a href="https://www.affiliate-link.com/product1" target="_blank">Buy Now</a>
-                </div>
-            </section>
-            <section class="product">
-                <img src="skincare.png" alt="Product 2">
-                <div class="product-info">
-                    <h2>Product 2</h2>
-                    <p>The next thing you must have in your bag</p>
-                    <a href="https://www.affiliate-link.com/product2" target="_blank">Buy Now</a>
-                </div>
-            </section>
-            <!-- Add more product sections as needed -->
         </section>
 
-        <section id="about" class="hidden about">
-            <h2>About Us</h2>
-            <p>Hey Girlies, I am so flattered that you wanted to know more about us. I just wanted you guys to have a place to reach out to for some tips or motivation. I wanted to create a self care and self growth space for all of you guys. I wanted this place to be a site for you to find what you are looking for, a place to inspire you to read books, take care of yourself and many more. I hope I created that for you.</p>
+        <section id="hygiene" class="hidden">
+            <h2>Hygiene Products</h2>
+            <section class="product">
+                <img src="hygiene1.jpg" alt="Hygiene Product 1">
+                <div class="product-info">
+                    <h2>Hygiene Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget.</p>
+                    <a href="https://www.affiliate-link.com/hygiene1" target="_blank">Buy Now</a>
+                </div>
+            </section>
         </section>
 
-       
+        <section id="books" class="hidden">
+            <h2>Motivating Books</h2>
+            <section class="product">
+                <img src="book1.jpg" alt="Book 1">
+                <div class="product-info">
+                    <h2>Motivating Book 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget.</p>
+                    <a href="https://www.affiliate-link.com/book1" target="_blank">Buy Now</a>
+                </div>
+            </section>
+        </section>
 
-        <section id="contact" class="hidden contact">
-            <h2>Contact Us</h2>
-            <p>If you have any queries, you can reach out to me on salvatorevesperia@gmail.com</p>
+        <section id="skincare" class="hidden">
+            <h2>Skincare</h2>
+            <section class="product">
+                <img src="skincare1.jpg" alt="Skincare Product 1">
+                <div class="product-info">
+                    <h2>Skincare Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget.</p>
+                    <a href="https://www.affiliate-link.com/skincare1" target="_blank">Buy Now</a>
+                </div>
+            </section>
+        </section>
+
+        <section id="makeup" class="hidden">
+            <h2>Makeup</h2>
+            <section class="product">
+                <img src="makeup1.jpg" alt="Makeup Product 1">
+                <div class="product-info">
+                    <h2>Makeup Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget.</p>
+                    <a href="https://www.affiliate-link.com/makeup1" target="_blank">Buy Now</a>
+                </div>
+            </section>
+        </section>
+
+        <section id="workout" class="hidden">
+            <h2>Workout Products</h2>
+            <section class="product">
+                <img src="workout1.jpg" alt="Workout Product 1">
+                <div class="product-info">
+                    <h2>Workout Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget.</p>
+                    <a href="https://www.affiliate-link.com/workout1" target="_blank">Buy Now</a>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
